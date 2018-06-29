@@ -12,7 +12,7 @@ fs.access(zipFile, (err) => {
   if (!err) {
 	extract(zipFile, {dir: sdkPath}, function (err) {
         if (!err) {
-            fs.unlink(zipFile).then(() => {});
+         
         } else {
             console.log(err);
             console.error(errMsg);
